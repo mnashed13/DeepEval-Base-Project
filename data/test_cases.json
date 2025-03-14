@@ -1,0 +1,15 @@
+{
+	"completion_tests": [
+		{
+			"prompt": "What is the capital of France?",
+			"expected_concepts": ["Paris", "capital city", "France"]
+		}
+	],
+	"rag_tests": [
+		{
+			"query": "What are the company's remote work policies?",
+			"context": "Our company allows flexible remote work arrangements...",
+			"expected_concepts": ["flexible", "remote work", "policy"]
+		}
+	]
+}
