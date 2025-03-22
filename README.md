@@ -1,6 +1,6 @@
 # DeepEval Base Project
 
-This project serves as a foundation for evaluating Large Language Models (LLMs) using [DeepEval](https://docs.deepeval.com/), a comprehensive framework for testing and evaluating LLM applications.
+This project serves as a foundation for evaluating Large Language Models (LLMs) using [DeepEval](https://docs.confident-ai.com/docs/getting-started), a comprehensive framework for testing and evaluating LLM applications.
 
 ## 🚀 Getting Started
 
