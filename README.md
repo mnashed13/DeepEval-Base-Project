@@ -114,31 +114,25 @@ DeepEval provides several powerful metrics for evaluating LLM outputs:
 
 ### Answer Relevancy
 
-- [Answer Relevancy Documentation](https://docs.deepeval.com/metrics/answer-relevancy)
+- [Answer Relevancy Documentation](https://docs.confident-ai.com/docs/metrics-answer-relevancy)
 - Measures how well an LLM's response aligns with the given question
 - Useful for question-answering and chatbot applications
 
 ### Contextual Relevancy
 
-- [Contextual Relevancy Documentation](https://docs.deepeval.com/metrics/contextual-relevancy)
+- [Contextual Relevancy Documentation](https://docs.confident-ai.com/docs/metrics-contextual-relevancy)
 - Evaluates if the LLM's response uses the provided context appropriately
 - Essential for RAG (Retrieval-Augmented Generation) applications
 
-### Factual Consistency
-
-- [Factual Consistency Documentation](https://docs.deepeval.com/metrics/factual-consistency)
-- Checks if the LLM's response contains factual contradictions with the given context
-- Critical for ensuring truthful and accurate responses
-
 ### Response Completeness
 
-- [Response Completeness Documentation](https://docs.deepeval.com/metrics/response-completeness)
+- [Response Completeness Documentation](https://docs.confident-ai.com/docs/metrics-conversation-completeness)
 - Assesses whether the LLM's response fully addresses all aspects of the question
 - Important for comprehensive answer generation
 
 ### Bias Evaluation
 
-- [Bias Evaluation Documentation](https://docs.deepeval.com/metrics/bias)
+- [Bias Evaluation Documentation](https://docs.confident-ai.com/docs/metrics-bias)
 - Detects potential biases in LLM outputs
 - Essential for ensuring fair and ethical AI responses
 
@@ -158,9 +152,9 @@ result = metric.measure(
 
 ## 📚 Additional Resources
 
-- [DeepEval Documentation](https://docs.deepeval.com/)
+- [DeepEval Documentation](https://docs.confident-ai.com/docs/getting-started)
 - [DeepEval GitHub Repository](https://github.com/confident-ai/deepeval)
-- [DeepEval Examples](https://docs.deepeval.com/examples)
+- [DeepEval Examples](https://github.com/confident-ai/deepeval/tree/main/tests)
 
 ## 🤝 Contributing
 
