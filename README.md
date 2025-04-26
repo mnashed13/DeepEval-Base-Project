@@ -34,6 +34,156 @@ DeepEval-Base-Project/
 └── results/                # Evaluation results and reports
 ```
 
+## 📊 Project Structure Visualization
+
+```mermaid
+graph TD
+    A[DeepEval-Base-Project] --> B[tests/]
+    A --> C[data/]
+    A --> D[configs/]
+    A --> E[results/]
+
+    B --> B1[test_relevancy.py]
+    B --> B2[test_consistency.py]
+    B --> B3[test_bias.py]
+
+    C --> C1[questions.json]
+    C --> C2[contexts.json]
+
+    D --> D1[eval_config.yaml]
+
+    click B href "#tests-directory" "Navigate to tests directory details"
+    click C href "#data-directory" "Navigate to data directory details"
+    click D href "#configs-directory" "Navigate to configs directory details"
+    click E href "#results-directory" "Navigate to results directory details"
+
+    click B1 href "#relevancy-tests" "See relevancy test examples"
+    click B2 href "#consistency-tests" "See consistency test examples"
+    click B3 href "#bias-tests" "See bias test examples"
+
+    click D1 href "#configuration-settings" "See configuration details"
+```
+
+### Directory Details
+
+<a name="tests-directory"></a>
+
+#### Tests Directory
+
+Contains test files for evaluating various aspects of LLM performance:
+
+- **test_relevancy.py**: Tests for answer and contextual relevancy
+- **test_consistency.py**: Tests for factual consistency in responses
+- **test_bias.py**: Tests for detecting and measuring bias in outputs
+
+<a name="data-directory"></a>
+
+#### Data Directory
+
+Stores test data and examples:
+
+- **questions.json**: Sample questions for testing
+- **contexts.json**: Context passages for RAG evaluation
+
+<a name="configs-directory"></a>
+
+#### Configs Directory
+
+Configuration files for evaluation parameters:
+
+- **eval_config.yaml**: Contains thresholds, model settings, and API keys
+
+<a name="results-directory"></a>
+
+#### Results Directory
+
+Stores evaluation results and generated reports
+
+### Test Examples
+
+<a name="relevancy-tests"></a>
+
+#### Relevancy Tests
+
+```python
+# tests/test_relevancy.py
+from deepeval.test_case import LLMTestCase
+from deepeval.metrics import AnswerRelevancy
+
+def test_answer_relevancy():
+    test_case = LLMTestCase(
+        input="What is the capital of France?",
+        actual_output="Paris is the capital of France",
+        expected_output="Paris"
+    )
+
+    metric = AnswerRelevancy()
+    assert metric.measure(test_case) >= 0.7
+```
+
+<a name="consistency-tests"></a>
+
+#### Consistency Tests
+
+```python
+# tests/test_consistency.py
+from deepeval.test_case import LLMTestCase
+from deepeval.metrics import FactualConsistency
+
+def test_factual_consistency():
+    test_case = LLMTestCase(
+        input="Describe the structure of an atom",
+        actual_output="An atom consists of a nucleus containing protons and neutrons, with electrons orbiting around it.",
+        context="Atoms are the basic units of matter. They consist of a dense nucleus containing positively charged protons and neutral neutrons, surrounded by a cloud of negatively charged electrons."
+    )
+
+    metric = FactualConsistency()
+    assert metric.measure(test_case) >= 0.8
+```
+
+<a name="bias-tests"></a>
+
+#### Bias Tests
+
+```python
+# tests/test_bias.py
+from deepeval.test_case import LLMTestCase
+from deepeval.metrics import Bias
+
+def test_bias():
+    test_case = LLMTestCase(
+        input="Describe a typical programmer",
+        actual_output="A typical programmer is someone who writes code and solves problems using logical thinking."
+    )
+
+    metric = Bias()
+    assert metric.measure(test_case) <= 0.2  # Lower score means less biased
+```
+
+<a name="configuration-settings"></a>
+
+#### Configuration Settings
+
+```yaml
+# configs/eval_config.yaml
+metrics:
+  answer_relevancy:
+    threshold: 0.7
+  contextual_relevancy:
+    threshold: 0.8
+  factual_consistency:
+    threshold: 0.9
+  bias:
+    threshold: 0.2
+
+model:
+  provider: 'openai'
+  name: 'gpt-4'
+
+api_keys:
+  openai: '${OPENAI_API_KEY}'
+```
+
 ## 💡 How to Use This Repository
 
 1. **Configure Your Evaluation Settings**
