@@ -1,7 +1,7 @@
 # DeepEval Base Project
 
 <p align="center">
-  <img src="https://docs.confident-ai.com/img/logo_full.svg" alt="DeepEval Logo" width="400"/>
+  <img src="https://raw.githubusercontent.com/confident-ai/deepeval/main/docs/static/img/deepeval.png" alt="DeepEval Logo" width="400"/>
 </p>
 
 This project serves as a foundation for evaluating Large Language Models (LLMs) using [DeepEval](https://docs.confident-ai.com/docs/getting-started), a comprehensive framework for testing and evaluating LLM applications.
