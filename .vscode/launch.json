@@ -1,0 +1,50 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Run All Tests",
+			"type": "python",
+			"request": "launch",
+			"module": "pytest",
+			"args": ["tests/", "-v"],
+			"console": "integratedTerminal",
+			"justMyCode": false
+		},
+		{
+			"name": "Run Relevancy Tests",
+			"type": "python",
+			"request": "launch",
+			"module": "pytest",
+			"args": ["tests/test_relevancy.py", "-v"],
+			"console": "integratedTerminal",
+			"justMyCode": false
+		},
+		{
+			"name": "Run Consistency Tests",
+			"type": "python",
+			"request": "launch",
+			"module": "pytest",
+			"args": ["tests/test_consistency.py", "-v"],
+			"console": "integratedTerminal",
+			"justMyCode": false
+		},
+		{
+			"name": "Run Bias Tests",
+			"type": "python",
+			"request": "launch",
+			"module": "pytest",
+			"args": ["tests/test_bias.py", "-v"],
+			"console": "integratedTerminal",
+			"justMyCode": false
+		},
+		{
+			"name": "Debug Current Test File",
+			"type": "python",
+			"request": "launch",
+			"module": "pytest",
+			"args": ["${file}", "-v"],
+			"console": "integratedTerminal",
+			"justMyCode": false
+		}
+	]
+}

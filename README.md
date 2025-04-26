@@ -22,6 +22,16 @@ python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 
+4. Use VS Code's launch configurations to run tests:
+   - Open the Run and Debug view (Ctrl+Shift+D or Cmd+Shift+D)
+   - Select a configuration from the dropdown menu:
+     - "Run All Tests"
+     - "Run Relevancy Tests"
+     - "Run Consistency Tests"
+     - "Run Bias Tests"
+     - "Debug Current Test File"
+   - Click the play button or press F5 to run the selected configuration
+
 ## 📁 Project Structure
 
 ```
