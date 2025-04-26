@@ -1,5 +1,9 @@
 # DeepEval Base Project
 
+<p align="center">
+  <img src="https://docs.confident-ai.com/img/logo_full.svg" alt="DeepEval Logo" width="400"/>
+</p>
+
 This project serves as a foundation for evaluating Large Language Models (LLMs) using [DeepEval](https://docs.confident-ai.com/docs/getting-started), a comprehensive framework for testing and evaluating LLM applications.
 
 ## 🚀 Getting Started
@@ -302,9 +306,32 @@ result = metric.measure(
 
 ## 📚 Additional Resources
 
-- [DeepEval Documentation](https://docs.confident-ai.com/docs/getting-started)
+### Official Documentation
+
+- [Getting Started with DeepEval](https://docs.confident-ai.com/docs/getting-started)
 - [DeepEval GitHub Repository](https://github.com/confident-ai/deepeval)
 - [DeepEval Examples](https://github.com/confident-ai/deepeval/tree/main/tests)
+
+### Core Concepts
+
+- [Test Case Management](https://docs.confident-ai.com/docs/test-case-management)
+- [Metrics Overview](https://docs.confident-ai.com/docs/metrics-overview)
+- [Running Evaluations](https://docs.confident-ai.com/docs/evaluation)
+- [Working with Datasets](https://docs.confident-ai.com/docs/datasets)
+
+### Advanced Usage
+
+- [Custom Metrics](https://docs.confident-ai.com/docs/custom-metrics)
+- [LLM Providers Integration](https://docs.confident-ai.com/docs/llm-providers)
+- [CI/CD Integration](https://docs.confident-ai.com/docs/ci-cd)
+- [Confidence AI Platform Integration](https://docs.confident-ai.com/docs/platform-overview)
+
+### Tutorials
+
+- [RAG Evaluation Tutorial](https://docs.confident-ai.com/docs/rag-evaluation)
+- [Multi-turn Conversation Testing](https://docs.confident-ai.com/docs/metrics-conversation)
+- [Hallucination Detection](https://docs.confident-ai.com/docs/metrics-factual-consistency)
+- [Generating Evaluation Reports](https://docs.confident-ai.com/docs/report)
 
 ## 🤝 Contributing
 
